@@ -1,0 +1,15 @@
+artifact_uri: file:///home/pvanbranteghen/workspace/01_stratio/01_internal/04_chapterDS/01_demos/02_mlflow/template_ds_mlflow/models/mlruns/0/e63637923bb84b85acdf533ab60a4935/artifacts
+end_time: 1584549896021
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: e63637923bb84b85acdf533ab60a4935
+run_uuid: e63637923bb84b85acdf533ab60a4935
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1584549895966
+status: 3
+tags: []
+user_id: pvanbranteghen

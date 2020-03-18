@@ -6,7 +6,7 @@ import sys
 if __name__ == "__main__":
     alpha = float(sys.argv[1]) if len(sys.argv) > 1 else 0.5
     l1_ratio = float(sys.argv[2]) if len(sys.argv) > 2 else 0.5
-    data = download_raw_data()
+    data_in = download_raw_data()
     
-    mlflow_model(data,alpha,l1_ratio)
+    mlflow_model(data_in,alpha,l1_ratio)
     
