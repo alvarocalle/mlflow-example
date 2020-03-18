@@ -1,0 +1,10 @@
+name: PROJECT_NAME
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    parameters:
+      P1: {type: float, default: 0.5}
+      P2: {type: float, default: 0.1}
+    command: " python src/python/project/bin/run.py {alpha} {l1_ratio}"
