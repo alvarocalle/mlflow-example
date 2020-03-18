@@ -23,11 +23,13 @@ def mlflow_model(data,alpha,l1_ratio):
         lr = train_model(train_x,train_y,alpha,l1_ratio)
         predicted_qualities = lr.predict(test_x)
         (rmse, mae, r2) = eval_metrics(test_y, predicted_qualities)
+        test_x["predicted_qualities"]=predicted_qualities
 
         mlflow.log_param("alpha", alpha)
         mlflow.log_param("l1_ratio", l1_ratio)
         mlflow.log_metric("rmse", rmse)
         mlflow.log_metric("r2", r2)
         mlflow.log_metric("mae", mae)
-
+        test_x.to_csv("predictions.csv")
+        mlflow.log_artifact("predictions.csv")
         mlflow.sklearn.log_model(lr, "model")
